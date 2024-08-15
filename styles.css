@@ -1,0 +1,433 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+/* Home Section Styling */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 5% 0;
+}
+
+.home-content {
+    max-width: 100%;
+    text-align: center;
+}
+
+.home-content h3 {
+    font-size: 36px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 25px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.btn1 {
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: inline-block; /* Ensure it's styled as a button */
+    text-align: center;    /* Center the text inside the button */
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Image Styling */
+.img-box img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 8px solid orangered;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-top: 20px;
+}
+
+.img-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+/* Academic Section Styling */
+.academic {
+    padding: 80px 5%;
+    background-color: rgb(241, 241, 241);
+}
+
+.academic h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.degree-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.degree-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.degree-item h3 {
+    font-size: 20px;
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.degree-item p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.degree-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievements Section Styling */
+.achievements {
+    padding: 80px 5%;
+    background-color: #f8f9fa;
+}
+
+.achievements h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.achievement-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.achievement-item {
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item h3 {
+    font-size: 20px;
+    color: yellow; /* Title color for Achievements */
+    margin-bottom: 10px;
+}
+
+.achievement-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.achievement-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Personal Interests Section Styling */
+.interests {
+    padding: 80px 5%;
+    background-color: #e0f7fa;
+}
+
+.interests h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00796b;
+}
+
+.interest-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.interest-item {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-item h3 {
+    font-size: 20px;
+    color: #ffeb3b; /* Title color */
+    margin-bottom: 10px;
+}
+
+.interest-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.interest-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 80px 5%;
+    background-color: #fff3e0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #e65100;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.contact-section a {
+    color: #d84315;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.instagram-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e65100;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-btn:hover {
+    background-color: #bf360c;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    /* Adjust layout for larger screens (tablets and above) */
+
+    .home {
+        flex-direction: row; /* Align content side by side */
+        justify-content: space-between;
+        padding: 60px 12% 0;
+    }
+
+    .home-content {
+        max-width: 50%; /* Limit the width of content */
+        text-align: left; /* Align text to the left */
+    }
+
+    .home-content h1 {
+        font-size: 56px; /* Increase font size */
+    }
+
+    .home-content h3 {
+        font-size: 42px; /* Increase font size */
+    }
+
+    .home-content p {
+        font-size: 18px; /* Slightly larger text */
+    }
+
+    .img-box img {
+        width: 450px; /* Increase image size */
+        height: 450px;
+        margin-top: 0;
+    }
+
+    .academic, .achievements, .interests, .contact-section {
+        padding: 100px 12%;
+    }
+
+    .degree-box, .achievement-box, .interest-box {
+        flex-direction: row; /* Arrange items in a row */
+        gap: 2em;
+    }
+
+    .degree-item, .achievement-item, .interest-item {
+        flex: 1; /* Allow boxes to grow equally */
+        margin-bottom: 0;
+    }
+
+    .degree-item h3, .achievement-item h3, .interest-item h3 {
+        font-size: 24px; /* Adjust title size */
+    }
+
+    .degree-item p, .achievement-item p, .interest-item p {
+        font-size: 18px; /* Adjust text size */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Further adjustments for larger screens like desktops */
+    
+    .home-content h1 {
+        font-size: 64px;
+    }
+
+    .home-content h3 {
+        font-size: 48px;
+    }
+
+    .home-content p {
+        font-size: 20px;
+    }
+
+    .img-box img {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .academic h2, .achievements h2, .interests h2, .contact-section h2 {
+        font-size: 42px;
+    }
+
+    .degree-item h3, .achievement-item h3, .interest-item h3 {
+        font-size: 28px;
+    }
+
+    .degree-item p, .achievement-item p, .interest-item p {
+        font-size: 20px;
+    }
+}
